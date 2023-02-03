@@ -337,7 +337,11 @@ VALUES
 ('University of Kansas'),
 ('Kansas State University'),
 ('Bowling Green State University'),
-('')
+('Ball State University'),
+('Oklahoma State University'),
+('Florida Atlantic University'),
+('University of Memphis'),
+('Fordham University')
 
 
 SELECT * FROM college;
@@ -550,7 +554,36 @@ VALUES
 ('Terry', 'McLaurin', 2, 32, 183, 210, 1995-09-15, 10),
 ('Curtis', 'Samuel', 2, 32, 180, 195, 1996-08-11, 10),
 ('Jahan', 'Dotson', 2, 32, 180, 184, 2000-03-22, 66),
-('Dyami', 'Brown', 2, 32, 183, 195, 1999-11-01, 44);
+('Dyami', 'Brown', 2, 32, 183, 195, 1999-11-01, 44),
+('James', 'Conner', 3, 1, 185, 233, 1995-05-05, 43),
+('Darrel', 'Williams', 3, 1, 180, 219, 1995-04-15, 12),
+('Tyler', 'Allgeier', 3, 2, 180, 220, 2000-04-15, 41),
+('Cordarrelle', 'Patterson', 3, 2, 188, 220, 1991-03-17, 80),
+('Caleb', 'Huntley', 3, 2, 178, 229, 1998-09-15, 94),
+('Avery', 'Williams', 3, 2, 175, 195, 1998-07-15, 18),
+('J.K.', 'Dobbins', 3, 3, 178, 214, 1998-12-17, 10),
+('Kenyan', 'Drake', 3, 3, 185, 211, 1994-01-26, 33),
+('Gus', 'Edwards', 3, 3, 185, 238, 1995-04-13, 72),
+('Justice', 'Hill', 3, 3, 178, 200, 1997-11-14, 95),
+('Devin', 'Singletary', 3, 4, 170, 203, 1997-09-03, 96),
+('James', 'Cook', 3, 4, 180, 190, 1999-09-25, 31),
+('D''Onta', 'Foreman', 3, 5, 185, 236, 1996-04-24, 2),
+('Chuba', 'Hubbard', 3, 5, 185, 210, 1999-06-11, 95),
+('Christian', 'McCaffrey', 3, 28, 180, 205, 1996-06-07, 22),
+('David', 'Montgomery', 3, 6, 180, 224, 1997-06-07, 46),
+('Khalil', 'Herbert', 3, 6, 175, 212, 1998-04-21, 40),
+('Joe', 'Mixon', 3, 7, 185, 220, 1996-07-24, 1),
+('Samaje', 'Perine', 3, 7, 180, 240, 1995-09-16, 1),
+('Nick', 'Chubb', 3, 8, 180, 227, 1995-12-27, 31),
+('Kareem', 'Hunt', 3, 8, 180, 216, 1995-08-06, 90),
+('Tony', 'Pollard', 3, 9, 183, 209, 1997-04-30, 97),
+('Ezekiel', 'Elliot', 3, 9, 183, 228, 1995-07-22, 10),
+('Malik', 'Davis', 3, 9, 178, 207, 1998-11-26, 57),
+('Latavius', 'Murray', 3, 10, 190, 230, 1990-01-18, 58),
+('Javonte', 'Williams', 3, 10, 178, 220, 2000-04-25, 44),
+('Chase', 'Edmonds', 3, 10, 175, 210, 1996-04-13, 98),
+('Mike', 'Boone', 3, 10, 178, 205, 1995-07-30, 4)
+('Eno', 'Benjamin', 3, 23, 175, 207, 1999-04-13, 53),
 
 
 --VIEWS--
