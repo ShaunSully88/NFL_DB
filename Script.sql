@@ -331,7 +331,13 @@ VALUES
 ('Minnesota State University'),
 ('Baylor University'),
 ('Weber State University'),
-('Middle Tennessee State University');
+('Middle Tennessee State University'),
+('University of Mississippi'),
+('University of Toledo'),
+('University of Kansas'),
+('Kansas State University'),
+('Bowling Green State University'),
+('')
 
 
 SELECT * FROM college;
@@ -511,7 +517,40 @@ VALUES
 ('Richie', 'James', 2, 24, 175, 185, 1995-09-05, 88),
 ('Isaiah', 'Hodgins', 2, 24, 193, 210, 1998-10-21, 70),
 ('Wan''Dale', 'Robinson', 2, 24, 173, 185, 2001-01-05, 69),
-('Sterling', 'Shepard', 2, 24, 178, 201, 1993-02-10, 1)
+('Sterling', 'Shepard', 2, 24, 178, 201, 1993-02-10, 1),
+('Garrett', 'Wilson', 2, 25, 183, 192, 2000-07-22, 10),
+('Corey', 'Davis', 2, 25, 190, 209, 1995-01-11, 78),
+('Elijah', 'Moore', 2, 25, 178, 178, 2000-03-27, 89),
+('Denzel', 'Mims', 2, 25, 190, 207, 1997-10-10, 86),
+('Braxton', 'Berrios', 2, 25, 175, 190, 1995-10-06, 72),
+('Jeff', 'Smith', 2, 25, 185, 195, 1997-04-21, 24),
+('A.J', 'Brown', 2, 26, 185, 226, 1997-06-30, 89),
+('DeVonta', 'Smith', 2, 26, 183, 170, 1998-11-14, 33),
+('Quez', 'Watkins', 2, 26, 183, 193, 1998-06-09, 35),
+('Zach', 'Pascal', 2, 26, 188, 214, 1994-12-18, 50),
+('Diontae', 'Johnson', 2, 27, 178, 183, 1996-07-05, 90),
+('George', 'Pickens', 2, 27, 190, 200, 2001-03-04, 31),
+('Steven', 'Sims', 2, 27, 178, 176, 1997-03-31, 91),
+('Brandon', 'Aiyuk', 2, 28, 183, 200, 1998-03-17, 62),
+('Deebo', 'Samuel', 2, 28, 183, 215, 1996-01-15, 54),
+('Jauan', 'Jennings', 2, 28, 190, 212, 1997-07-10, 80),
+('Ray-Ray', 'McCloud', 2, 28, 175, 190, 1996-10-15, 14),
+('D.K.', 'Metcalf', 2, 29, 193, 235, 1997-12-14, 89),
+('Tyler', 'Lockett', 2, 29, 178, 182, 1992-09-28, 92),
+('Marquise', 'Goodwin', 2, 29, 175, 180, 1990-11-19, 2),
+('Mike', 'Evans', 2, 30, 196, 231, 1993-08-21, 23),
+('Chris', 'Godwin', 2, 30, 185, 208, 1996-02-27, 66),
+('Russell', 'Gage', 2, 30, 183, 184, 1996-01-22, 12),
+('Julio', 'Jones', 2, 30, 190, 220, 1989-02-08, 33),
+('Scott', 'Miller', 2, 30, 175, 174, 1997-07-31, 93),
+('Breshad', 'Perriman', 2, 30, 185, 210, 1993-09-10, 58),
+('Robert', 'Woods', 2, 31, 183, 195, 1992-04-10, 9),
+('Treylon', 'Burks', 2, 31, 190, 225, 2000-03-23, 13),
+('Nick', 'Westbrook-Ikhine', 2, 31, 188, 215, 1997-03-21, 20),
+('Terry', 'McLaurin', 2, 32, 183, 210, 1995-09-15, 10),
+('Curtis', 'Samuel', 2, 32, 180, 195, 1996-08-11, 10),
+('Jahan', 'Dotson', 2, 32, 180, 184, 2000-03-22, 66),
+('Dyami', 'Brown', 2, 32, 183, 195, 1999-11-01, 44);
 
 
 --VIEWS--
@@ -530,7 +569,16 @@ VALUES
 ORDER BY conference, division;
 
 
-
+SELECT 
+    teams.team_name AS 'Team',
+    stadium.stadium_name AS 'Stadium Name',
+    stadium.stadium_capacity AS 'Capacity',
+    stadium.city AS 'City',
+    state.state_name AS 'State'   
+FROM stadium
+  INNER JOIN state ON stadium.state_id=state.state_id
+  INNER JOIN teams ON stadium.stadium_id=teams.stadium_id
+ORDER BY stadium_capacity DESC;  
 
 
 
