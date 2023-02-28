@@ -52,6 +52,8 @@ CREATE TABLE stadium (
     REFERENCES state (state_id)
 );
 
+SELECT * FROM stadium;
+
 --Teams Table--
 
 CREATE TABLE teams (
@@ -70,6 +72,7 @@ CREATE TABLE teams (
     REFERENCES division (div_id)    
 );
 
+SELECT * FROM teams;
 --Position Table--
 
 CREATE TABLE position (
@@ -115,7 +118,7 @@ INSERT INTO conference
 VALUES (1, 'NFC'),
        (2, 'AFC');
 
-
+SELECT * FROM conference;
 --Division Seeds--
 INSERT INTO division 
 VALUES
@@ -123,6 +126,9 @@ VALUES
 (2, 'South'),
 (3, 'West'),
 (4, 'East');
+
+SELECT * FROM conference;
+SELECT * FROM division;
 
 --State Seeds--
 INSERT INTO  state 
@@ -150,7 +156,7 @@ VALUES ('Arizona'),
     ('Washington'),
     ('Tennessee');
 
-
+SELECT * FROM state;
 --Stadium Seeds--
 INSERT INTO stadium 
 VALUES
@@ -237,6 +243,8 @@ VALUES
 ('Safety'),
 ('Kicker'),
 ('Punter');
+
+SELECT * FROM position;
 
 --College Seeds--
 INSERT INTO college
@@ -1902,7 +1910,7 @@ VALUES
 ('Tress', 'Way', 11, 32, 185, 220, 1990-04-18, 1);
 
 
-
+SELECT * FROM player;
 
 
 
